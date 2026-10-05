@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "source_kind": "synthetic",
+  "label": "Unknown event context is distinct from UTC local-offset metadata",
+  "sources": ["lab"],
+  "events": [
+    {"event_id": "no-offset", "source_id": "lab", "original_timestamp": "2000-01-02T12:00:00", "timestamp_role": "event_time", "quantization": {"mode": "truncated", "quantum_us": 1000000}, "clock_error_us": {"min": 0, "max": 0}},
+    {"event_id": "no-error", "source_id": "lab", "original_timestamp": "2000-01-02T12:00:00Z", "timestamp_role": "event_time", "quantization": {"mode": "truncated", "quantum_us": 1000000}, "clock_error_us": null},
+    {"event_id": "receipt", "source_id": "lab", "original_timestamp": "2000-01-02T12:00:00Z", "timestamp_role": "ingest_time", "quantization": {"mode": "truncated", "quantum_us": 1000000}, "clock_error_us": {"min": 0, "max": 0}},
+    {"event_id": "negative-zero", "source_id": "lab", "original_timestamp": "2000-01-02T12:00:00-00:00", "timestamp_role": "event_time", "quantization": {"mode": "rounded", "quantum_us": 1}, "clock_error_us": {"min": 0, "max": 0}}
+  ]
+}

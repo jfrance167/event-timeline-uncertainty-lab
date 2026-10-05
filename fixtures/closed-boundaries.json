@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "source_kind": "synthetic",
+  "label": "Closed touching endpoints do not establish strict order",
+  "sources": ["lab"],
+  "events": [
+    {"event_id": "A", "source_id": "lab", "original_timestamp": "2000-01-02T12:00:00Z", "timestamp_role": "event_time", "quantization": {"mode": "truncated", "quantum_us": 1000000}, "clock_error_us": {"min": 0, "max": 0}},
+    {"event_id": "B", "source_id": "lab", "original_timestamp": "2000-01-02T12:00:01Z", "timestamp_role": "event_time", "quantization": {"mode": "truncated", "quantum_us": 1000000}, "clock_error_us": {"min": 0, "max": 0}},
+    {"event_id": "C", "source_id": "lab", "original_timestamp": "2000-01-02T12:00:02.000001Z", "timestamp_role": "event_time", "quantization": {"mode": "truncated", "quantum_us": 1}, "clock_error_us": {"min": 0, "max": 0}}
+  ]
+}

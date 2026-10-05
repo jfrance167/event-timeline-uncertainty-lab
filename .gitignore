@@ -1,0 +1,10 @@
+__pycache__/
+verification-runs/
+.test-timeline-*/
+*.tmp
+reports/
+STATE.md
+.private/
+.env
+.env.*
+.venv/
